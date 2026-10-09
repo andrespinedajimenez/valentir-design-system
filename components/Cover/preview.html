@@ -1,0 +1,30 @@
+<!-- @dsCard height=300 -->
+<link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css">
+<div class="cv">
+<style>
+.cv{position:relative;width:960px;height:300px;background:var(--surface-page);overflow:hidden;font-family:var(--font-sans)}
+.cv svg{position:absolute;left:0;top:0}
+.cv .g900{fill:var(--green-900)}.cv .t600{fill:var(--teal-600)}.cv .g50{fill:var(--green-50)}.cv .org{fill:var(--logo-orange)}.cv .g700{fill:var(--green-700)}
+.cv .tile{rx:var(--radius-md)}
+.cv .arc{fill:none;stroke:var(--teal-600);stroke-width:3}
+.cv .txt{position:absolute;left:48px;bottom:40px;max-width:440px}
+.cv h1{margin:0;font-size:72px;line-height:.95;font-weight:800;letter-spacing:-2.16px;color:var(--ink)}
+.cv p{margin:16px 0 0;font-size:14px;line-height:20px;color:var(--ink-muted)}
+</style>
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+<!-- blocks: green-900 slab 288×324 (bleeds top/bottom), teal-600 200×132 (bleeds right), green-700 96×108, green-50 96×108, logo-orange disc 48 — all rx radius-md except the disc
+     arrangement: one tall slab with satellites stepped down the right edge, gaps space-md (12px)
+     pattern: literal motif — the "location ping" arcs that cross the hero photography; four concentric quarter-arcs in teal-600 at 3px (the system's accent rule weight), pitch space-3xl (32px)
+     scales: space-md 12, space-3xl 32, radius-md 12, radius-round for the disc -->
+<rect class="g900 tile" x="480" y="-12" width="288" height="324"/>
+<path class="arc" d="M480 268 A 64 64 0 0 1 544 332"/>
+<path class="arc" d="M480 236 A 96 96 0 0 1 576 332"/>
+<path class="arc" d="M480 204 A 128 128 0 0 1 608 332"/>
+<path class="arc" d="M480 172 A 160 160 0 0 1 640 332"/>
+<rect class="t600 tile" x="780" y="-12" width="200" height="144"/>
+<rect class="g700 tile" x="780" y="144" width="96" height="108"/>
+<rect class="g50 tile" x="888" y="144" width="96" height="168"/>
+<circle class="org" cx="828" cy="282" r="24"/>
+</svg>
+<div class="txt"><h1>Valentir<br>Green Tech</h1><p>Clarity for every mile — fleet video, tracking, and protection.</p></div>
+</div>
